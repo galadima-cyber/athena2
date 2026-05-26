@@ -1,0 +1,15 @@
+url_length
+body_length
+content_length_val
+num_params
+num_special_chars_url
+num_special_chars_body
+has_body
+has_sqli
+sqli_match_count
+has_xss
+xss_match_count
+has_traversal
+has_cmd_injection
+accesses_sensitive_path
+method_encoded
