@@ -20,13 +20,11 @@ app.config['SECRET_KEY'] = SECRET_KEY
 
 # Allow React (port 5173) to call Flask (port 5000).
 # Permit localhost and the developer's phone IP during local dev.
-CORS(app, resources={r'/api/*': {
-    'origins': [
-        'http://localhost:5173',
-        'http://127.0.0.1:5173',
-        'http://192.168.79.1:5173'
-    ]
-}})
+CORS(app, resources={r'/api/*': {'origins': [
+    'http://localhost:5173',
+    'https://athena2-tau.vercel.app',   # your actual Vercel URL
+    'https://*.vercel.app',
+]}})
 
 app.register_blueprint(analyze_bp)
 app.register_blueprint(history_bp)
