@@ -15,9 +15,9 @@ const NAV = [
   { to: '/',          label: 'Home',      icon: Shield         },
   { to: '/upload',    label: 'Upload',    icon: Upload         },
   { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard},
-  { to: '/logs',      label: 'Log Table', icon: Table2         },
+  { to: '/logs',      label: 'Logs', icon: Table2         },
   { to: '/history',   label: 'History',   icon: History        },
-  { to: '/model',     label: 'ML Model',  icon: Brain          },
+  { to: '/model',     label: 'Models',  icon: Brain          },
 ];
 
 export default function Sidebar({ theme, toggleTheme }) {
@@ -60,8 +60,7 @@ export default function Sidebar({ theme, toggleTheme }) {
         <div className="flex items-center h-14 px-3.5 border-b border-[var(--border)] shrink-0">
           <div className="flex items-center justify-center w-8 h-8 rounded-lg
             bg-[var(--accent)] shrink-0">
-            {/* <Shield size={16} className="text-white" /> */}
-            <img src="../../public/athena-logo.png" alt="Athena Logo rounded-lg w-8 h-8" />
+            <Shield size={16} className="text-white" />
           </div>
           {expanded && (
             <span className="ml-2.5 font-semibold text-sm text-[var(--text-primary)]

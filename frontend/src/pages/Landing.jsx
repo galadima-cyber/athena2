@@ -77,7 +77,7 @@ export default function Landing() {
             border border-[var(--border)] bg-[var(--bg-surface)]
             text-xs text-[var(--text-secondary)] mb-8">
             <span className="neon-dot" style={{width:6,height:6}} />
-            Undergraduate FYP — Web Security Research 2026
+            Federal University Dutse
           </div>
 
           {/* Logo mark */}
@@ -85,8 +85,8 @@ export default function Landing() {
             <div className="relative">
               <div className="w-26 h-26 rounded-2xl bg-[var(--accent)] flex
                 items-center justify-center shadow-cyber-lg shadow-[var(--accent)]">
-                {/* <Shield size={32} className="text-white" /> */}
-                <img src="../../public/athena-logo.png" alt="Athena Logo rounded-lg w-26 h-26" />
+                <Shield size={32} className="text-white" />
+                {/*<img src="../../public/athena-logo.png" alt="Athena Logo rounded-lg w-26 h-26" />*/}
               </div>
               <div className="absolute inset-0 rounded-2xl
                 opacity-20 blur-xl animate-pulse-slow" />
