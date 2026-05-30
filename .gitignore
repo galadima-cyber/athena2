@@ -25,7 +25,5 @@ dist-ssr
 backend/__pycache__/
 backend/uploads/
 backend/athena.db
-backend/models/*.pkl
-backend/models/*.keras
 frontend/node_modules/
 frontend/dist/
